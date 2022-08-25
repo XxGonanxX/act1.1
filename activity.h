@@ -19,11 +19,10 @@
 unsigned int sumaIterativa(unsigned int n) {
   int sumIte = 0;
   for(int i = 0; i < n; i++){
-
-    sumIte = sumIte + 1;
-  }
-	return sumIte;
-}
+		sumIte = sumIte + (n-i); 
+    }
+  return sumIte;
+};
 
 // =================================================================
 // sumaRecursiva. Calculate the sum from 1 to n with an recursive
@@ -41,7 +40,7 @@ unsigned int sumaRecursiva(unsigned int n) {
 	else{
 		return n + sumaRecursiva(n-1);
 	}
-}
+};
 
 // =================================================================
 // sumaDirecta. Calculate the sum from 1 to n with a mathematical
@@ -52,10 +51,8 @@ unsigned int sumaRecursiva(unsigned int n) {
 // @Complexity	??
 // =================================================================
 unsigned int sumaDirecta(unsigned int n) {
-	int sumDir = 0;
-
-		sumDir = (n*(n+1))/2;
-	return 0;
-}
+  int sumDir = (n*(n+1))/2;
+	return sumDir;
+};
 
 #endif /* ACTIVITY_H */
