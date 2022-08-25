@@ -1,8 +1,8 @@
 // =================================================================
 //
 // File: activity.h
-// Author:
-// Date:
+// Author: Alan Patricio González Bernal - A01067546
+// Date: 25/08/2022
 //
 // =================================================================
 #ifndef ACTIVITY_H
@@ -17,7 +17,12 @@
 // @Complexity	??
 // =================================================================
 unsigned int sumaIterativa(unsigned int n) {
-	return 0;
+  int sumIte = 0;
+  for(int i = 0; i < n; i++){
+
+    sumIte = sumIte + 1;
+  }
+	return sumIte;
 }
 
 // =================================================================
@@ -29,7 +34,13 @@ unsigned int sumaIterativa(unsigned int n) {
 // @Complexity	??
 // =================================================================
 unsigned int sumaRecursiva(unsigned int n) {
-	return 0;
+	
+	if(n==0){
+		return 0;
+	}
+	else{
+		return n + sumaRecursiva(n-1);
+	}
 }
 
 // =================================================================
@@ -41,6 +52,9 @@ unsigned int sumaRecursiva(unsigned int n) {
 // @Complexity	??
 // =================================================================
 unsigned int sumaDirecta(unsigned int n) {
+	int sumDir = 0;
+
+		sumDir = (n*(n+1))/2;
 	return 0;
 }
 
